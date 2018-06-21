@@ -10,11 +10,9 @@ public class BookController {
 
     private BookRepository bookRepository;
 
-
     public BookController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
-
 
     @RequestMapping("/books")
     public String getBooks(Model model) {
