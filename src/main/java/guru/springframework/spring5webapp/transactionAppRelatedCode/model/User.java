@@ -2,6 +2,7 @@ package guru.springframework.spring5webapp.transactionAppRelatedCode.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -15,32 +16,33 @@ public class User {
     private String username;
     @NotNull
     private String password;
+    // Locale
     @NotNull
-    private String location;
-    @NotNull
-    private String timeZone;
+    private String localeCode;
 
     @OneToMany(mappedBy = "user")
-    private Set<Category> categories;
+    private Set<Category> categories = new HashSet<>();
+
+    @OneToMany(mappedBy = "user")
+    private Set<Account> accounts = new HashSet<>();
 
 
     /* Constructors */
     public User() {
     }
 
-    public User(String username, String password, String location, String timeZone) {
+    public User(String username, String password, String localeCode) {
         this.username = username;
         this.password = password;
-        this.location = location;
-        this.timeZone = timeZone;
+        this.localeCode = localeCode;
     }
 
-    public User(String username, String password, String location, String timeZone, Set<Category> categories) {
+    public User(@NotNull String username, @NotNull String password, @NotNull String localeCode, Set<Category> categories, Set<Account> accounts) {
         this.username = username;
         this.password = password;
-        this.location = location;
-        this.timeZone = timeZone;
+        this.localeCode = localeCode;
         this.categories = categories;
+        this.accounts = accounts;
     }
 
 
@@ -69,20 +71,12 @@ public class User {
         this.password = password;
     }
 
-    public String getLocation() {
-        return location;
+    public String getLocaleCode() {
+        return localeCode;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getTimeZone() {
-        return timeZone;
-    }
-
-    public void setTimeZone(String timeZone) {
-        this.timeZone = timeZone;
+    public void setLocaleCode(String localeCode) {
+        this.localeCode = localeCode;
     }
 
     public Set<Category> getCategories() {
@@ -91,6 +85,14 @@ public class User {
 
     public void setCategories(Set<Category> categories) {
         this.categories = categories;
+    }
+
+    public Set<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(Set<Account> accounts) {
+        this.accounts = accounts;
     }
 
 
@@ -114,8 +116,9 @@ public class User {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", location='" + location + '\'' +
-                ", timeZone='" + timeZone + '\'' +
+                ", localeCode='" + localeCode + '\'' +
+                ", categories=" + categories +
+                ", accounts=" + accounts +
                 '}';
     }
 }
