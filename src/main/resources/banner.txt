@@ -1,0 +1,16 @@
+MMMMMMMM               MMMMMMMM  iiii          tttt               tttt
+M:::::::M             M:::::::M i::::i      ttt:::t            ttt:::t
+M::::::::M           M::::::::M  iiii       t:::::t            t:::::t
+M:::::::::M         M:::::::::M             t:::::t            t:::::t
+M::::::::::M       M::::::::::Miiiiiiittttttt:::::tttttttttttttt:::::ttttttt       ooooooooooo
+M:::::::::::M     M:::::::::::Mi:::::it:::::::::::::::::tt:::::::::::::::::t     oo:::::::::::oo
+M:::::::M::::M   M::::M:::::::M i::::it:::::::::::::::::tt:::::::::::::::::t    o:::::::::::::::o
+M::::::M M::::M M::::M M::::::M i::::itttttt:::::::tttttttttttt:::::::tttttt    o:::::ooooo:::::o
+M::::::M  M::::M::::M  M::::::M i::::i      t:::::t            t:::::t          o::::o     o::::o
+M::::::M   M:::::::M   M::::::M i::::i      t:::::t            t:::::t          o::::o     o::::o
+M::::::M    M:::::M    M::::::M i::::i      t:::::t            t:::::t          o::::o     o::::o
+M::::::M     MMMMM     M::::::M i::::i      t:::::t    tttttt  t:::::t    tttttto::::o     o::::o
+M::::::M               M::::::Mi::::::i     t::::::tttt:::::t  t::::::tttt:::::to:::::ooooo:::::o
+M::::::M               M::::::Mi::::::i     tt::::::::::::::t  tt::::::::::::::to:::::::::::::::o
+M::::::M               M::::::Mi::::::i       tt:::::::::::tt    tt:::::::::::tt oo:::::::::::oo
+MMMMMMMM               MMMMMMMMiiiiiiii         ttttttttttt        ttttttttttt     ooooooooooo
