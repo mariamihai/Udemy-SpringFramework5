@@ -2,6 +2,7 @@
 
 Based on Udemy Course [Spring framework 5: Beginner to guru](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
 
+Uses Java 8.
 
 ## Status
 
